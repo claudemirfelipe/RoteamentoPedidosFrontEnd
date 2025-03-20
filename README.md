@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+# Sistema de Pedidos para Restaurante
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um sistema de pedidos para restaurantes desenvolvido em **React** com **TypeScript** e **Material-UI**. Ele permite que os usuários realizem pedidos, consultem pedidos existentes e gerenciem itens de forma intuitiva.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Realizar Pedidos**:
+  - Selecione itens do cardápio e defina a quantidade.
+  - Adicione ou atualize itens no pedido.
+  - Exclua itens do pedido antes de finalizá-lo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Consultar Pedidos**:
+  - Visualize os pedidos agrupados por área da cozinha (Frituras, Grelhados, Saladas, etc.).
+  - Veja os detalhes de cada pedido, incluindo itens e quantidades.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Interface Moderna**:
+  - Design responsivo e intuitivo com Material-UI.
+  - Feedback visual com `Snackbar` e `Alert`.
 
-### `npm test`
+- **Integração com API**:
+  - Conecta-se a uma API para enviar e receber dados de pedidos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**:
+  - React
+  - TypeScript
+  - Material-UI (MUI)
+  - React Router DOM (para navegação)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Ferramentas**:
+  - Axios (para chamadas à API)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Pré-requisitos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (versão 16 ou superior)
+- NPM ou Yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Passos para Execução
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Extraia o projeto**:
+   - Extraia o arquivo ZIP compartilhado via ***** para uma pasta no seu computador.
 
-## Learn More
+2. **Instale as dependências**:
+   - Abra o terminal na pasta do projeto e execute:
+     npm install
+     # ou
+     yarn install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Configure a API**:
+   - Certifique-se de que a API está rodando e atualize a URL base no arquivo `src/services/api.ts`:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Inicie o servidor de desenvolvimento**:
+   - No terminal, execute:
+     npm start
+
+5. **Acesse o projeto**:
+   - Abra o navegador e acesse `http://localhost:3000`.
+
+---
+
+## Estrutura do Projeto
+
+sistema-pedidos-restaurante/
+├── src/
+│ ├── components/ # Componentes reutilizáveis
+│ │ ├── Button.tsx
+│ │ ├── Header.tsx
+│ │ ├── PedidoForm.tsx
+│ │ └── PedidoList.tsx
+│ ├── pages/ # Páginas da aplicação
+│ │ ├── Home.tsx
+│ │ ├── RealizarPedido.tsx
+│ │ └── ConsultarPedidos.tsx
+│ ├── services/ # Serviços de API
+│ │ └── api.ts
+│ ├── types/ # Tipos TypeScript
+│ │ └── Pedido.ts
+│ ├── App.tsx # Componente principal
+│ └── index.tsx # Ponto de entrada
+├── public/ # Arquivos estáticos
+├── package.json # Dependências e scripts
+├── tsconfig.json # Configuração do TypeScript
+└── README.md # Documentação do projeto
+
+---
+
+## Contato
+
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
+
+- **Nome**: [Claudemir Aparecido Felipe]
+- **E-mail**: [claudemirfelipe@gmail.com]

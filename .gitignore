@@ -1,23 +1,49 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+# Dependências do Node.js
+node_modules/
+.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Arquivos de ambiente
+.env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.development
+.env.test
+.env.production
 
+# Logs e cache
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+
+# Builds e pastas de distribuição
+dist/
+build/
+out/
+.next/
+
+# Configurações do IDE/Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração local
+.eslintcache
+*.local
+
+# Testes e cobertura
+coverage/
+.nyc_output/
+
+# Configurações do Vite (se estiver usando Vite)
+.cache/
+.temp/
