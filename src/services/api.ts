@@ -1,9 +1,9 @@
-//aa
 import axios from 'axios';
 
 // Configuração base do Axios
 const api = axios.create({
   baseURL: 'https://localhost:44344/api', // URL base da API
+  //baseURL: 'http://localhost:8080/api', // URL base da API Caso estiver usando Docker
 });
 
 // Função para verificar se a API está disponível

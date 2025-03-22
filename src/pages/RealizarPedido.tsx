@@ -1,4 +1,3 @@
-//aa
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Paper, Alert, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
@@ -65,7 +64,7 @@ const RealizarPedido: React.FC = () => {
       <Paper sx={{ p: 3 }}>
         {apiAvailable === false && (
           <Alert severity="error" sx={{ mb: 2 }}>
-            A API não está disponível no momento. Tentando reconectar...
+            O Sistema não está disponível no momento.
           </Alert>
         )}
         <PedidoForm onSubmit={handleSubmit} disabled={!apiAvailable} />
